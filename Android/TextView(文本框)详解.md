@@ -11,6 +11,7 @@
 
 ## 1.2基本属性详解
 ![TextView基本属性][1]
+
 布局代码：
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -54,6 +55,7 @@
 ## 2.扩展知识
 ### 2.1带有阴影的TextView
 ![带阴影的TextView][2]
+
 实现代码:
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -84,12 +86,17 @@
 
 ### 2.2带图片的TextView
 在很多app中，我们经常会看到这样的菜单:
+
 ![QQ截图][3]
+
 如图，要实现上面的想法，看过1A的小伙伴的想法是：一个ImageView用于显示图片+一个TextView用于显示文字，把他们丢到一个LinearLayout中，接着依次创建三个这样的小布局，再另外放到一个大的LinearLayout中，效果就可以实现了,但会不会有点繁琐?其实TextView就可以实现这个功能。
+
 **基本用法**
+
 设置图片的核心其实就是:drawableTop(上)，drawableButtom(下)，drawableLeft(左)，drawableRight(右)来设置图片位于文字的四个方向。另外，你也可以使用drawablePadding来设置图片与文字间的间距！
 
 效果图：
+
 ![带图片TextView][4]
 
 实现代码：
@@ -115,6 +122,7 @@
 
 ### 2.3实现跑马灯效果的TextView
 简单说下什么是跑马灯，就是生活中很多广告LED屏幕，有一行字一直循环滚滚动这样，好吧还是看看 实现效果图，一看就懂的了~
+
 ![TextView实现跑马灯效果][5]
 
 代码实现：
