@@ -152,6 +152,7 @@
 对于TextView的属性进行了额外的扩展，当然这只是其中的一部分，相信会给你以后实际开发中带来一点便利。本人很少做笔记，能力有限，写出来的东西可能有纰漏的地方，欢迎大家指出~
 
 对于TextView的其他属性，大家可以查一下API，我搜到了一个网址，不用翻墙也可以看Android的API，速度也不错，这里贡献给大家：[http://androiddoc.qiniudn.com/index.html][6]
+
 对应的TextView API地址：[http://androiddoc.qiniudn.com/reference/android/widget/TextView.html][7]
 
   [1]: http://7xsgy7.com1.z0.glb.clouddn.com/image/android/Android-20160331143016.png
