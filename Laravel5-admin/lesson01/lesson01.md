@@ -12,7 +12,7 @@
 ## 学习之前必要条件
 * PHP的知识
 * 看过Laravel官方文档或学习过相关视频
-* 一些前端的知识（jQuery、datatables、layer）
+* 一些前端的知识（jQuery、datatables、layer、bootstrap）
 
 > 不懂的技术先百度(谷歌)，找不到再问其他人
 
