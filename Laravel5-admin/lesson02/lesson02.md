@@ -47,5 +47,5 @@ Laravel 使用 Composer 管理依赖，因此，使用 Laravel 之前，确保�
 7. [https://packagist.org/](https://packagist.org/)
 
 ## 教程资料
-1. 项目源码：laravel-tutorial
+1. 项目源码：[laravel-tutorial](https://github.com/lanceWan/laravel-tutorial)
 2. 讲解资料：[https://github.com/lanceWan/INote/tree/master/Laravel5-admin](https://github.com/lanceWan/INote/tree/master/Laravel5-admin)
