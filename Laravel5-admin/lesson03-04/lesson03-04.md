@@ -34,4 +34,14 @@ php artisan make:auth
 
 `make:auth` 命令还创建了 `resources/views/layouts` 目录，该目录下包含了应用的基础布局文件。所有这些视图都使用了 `Bootstrap CSS` 框架，你也可以根据需要对其进行自定义。
 
-## 自定义登录页面样式
+## 项目资料
+1. [后台主题](https://github.com/puikinsh/gentelella)
+2. [datatables](http://datatables.club/)
+3. [layer](http://layer.layui.com/)
+4. [Laravel学院](http://laravelacademy.org/)
+5. [http://www.golaravel.com/](http://www.golaravel.com/)
+6. [https://packagist.org/](https://packagist.org/)
+
+## 教程资料
+1. 项目源码：[laravel-tutorial](https://github.com/lanceWan/laravel-tutorial)
+2. 教学笔记：[https://github.com/lanceWan/INote/tree/master/Laravel5-admin](https://github.com/lanceWan/INote/tree/master/Laravel5-admin)
