@@ -33,6 +33,7 @@
 4. [Laravel学院](http://laravelacademy.org/)
 5. [http://www.golaravel.com/](http://www.golaravel.com/)
 6. [https://packagist.org/](https://packagist.org/)
+7. [Laravel多语言](https://github.com/caouecs/Laravel-lang)
 
 # 教程资料
 1. 项目源码：[laravel-tutorial](https://github.com/lanceWan/laravel-tutorial)
