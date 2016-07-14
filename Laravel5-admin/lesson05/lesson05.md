@@ -36,6 +36,8 @@ $.ajaxSetup({
 
 # 自定义登录字段
 
+[http://www.iwanli.me/article/2](http://www.iwanli.me/article/2)
+
 根据 `AuthenticatesUsers` Trait 中的方法
 ```
 /**
