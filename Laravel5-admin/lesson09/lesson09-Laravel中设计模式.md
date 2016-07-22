@@ -232,7 +232,7 @@ abstract class Repository implements RepositoryInterface{
 
     abstract function model();
 
-    
+
     /**
      * 统计数量
      * @author 晚黎
@@ -271,6 +271,7 @@ abstract class Repository implements RepositoryInterface{
 **控制器中依赖注入**
 
 
+# 总结
 
 这种将数据访问从业务逻辑中分离出来的模式有很多好处：
 
@@ -278,3 +279,5 @@ abstract class Repository implements RepositoryInterface{
 2. 业务和数据访问逻辑完全分离
 3. 减少重复代码
 4. 使程序出错的几率降低
+
+> 一个控制器调用多个Repository数据的时候，要么都在相应的Repository中进行注入或引用，要么在控制其中添加。避免交叉引用乱象!
