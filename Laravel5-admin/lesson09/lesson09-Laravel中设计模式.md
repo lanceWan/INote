@@ -1,4 +1,4 @@
-# Laravel实战之设计模式
+# Laravel5.2实战视频之之设计模式
 
 > 晚黎 交流群：312621686  博客地址：[http://www.iwanli.me](http://www.iwanli.me "i晚黎的博客")
 
