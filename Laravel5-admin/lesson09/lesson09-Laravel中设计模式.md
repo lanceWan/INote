@@ -194,7 +194,77 @@ Repository 是衔接数据映射层和领域层之间的一个纽带，作用相
 
 **定义接口**
 
+```
+<?php
+namespace App\Repositories\Contracts;
+interface UserInterface{
+
+	/**
+	 * 获取所有用户
+	 * @author 晚黎
+	 * @date   2016-07-21
+	 * @return [type]     [description]
+	 */
+	public function allUsers();
+
+}
+```
 **定义一个基本的抽象类**
+
+```
+<?php
+namespace App\Repositories\Eloquent;
+use App\Repositories\Contracts\RepositoryInterface;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Container\Container as App;
+abstract class Repository implements RepositoryInterface{
+
+	/*App容器*/
+	protected $app;
+
+	/*操作model*/
+	protected $model;
+
+    public function __construct(App $app) {
+        $this->app = $app;
+        $this->makeModel();
+    }
+
+    abstract function model();
+
+    
+    /**
+     * 统计数量
+     * @author 晚黎
+     * @date   2016-07-21T17:09:32+0800
+     * @param  string                   $field   [description]
+     * @param  string                   $value   [description]
+     * @param  array                    $columns [description]
+     * @return [type]                            [description]
+     */
+    public function count($field='',$value='',$columns = array('*')){
+    	if (is_array($field) && is_array($value)) {
+    		$where = array_combine($field,$value);
+    		$this->model = $this->model->where($where);
+    	}
+    	if (is_string($field) && is_string($value)) {
+    		$this->model = $this->model->where($field,$value);
+    	}
+		return $this->model->select($columns)->count();
+    }
+
+    public function makeModel(){
+    	$model = $this->app->make($this->model());
+    	/*是否是Model实例*/
+    	if (!$model instanceof Model){
+    		throw new RepositoryException("Class {$this->model()} must be an instance of Illuminate\\Database\\Eloquent\\Model");
+    	}
+    	$this->model = $model;
+    }
+
+	
+}
+```
 
 **创建Repository并继承抽象类**
 
