@@ -272,8 +272,56 @@ abstract class Repository implements RepositoryInterface{
 
 **创建Repository并继承抽象类**
 
+```
+<?php
+namespace App\Repositories\Eloquent;
+use App\Repositories\Eloquent\Repository;
+use App\User;
+/**
+* 仓库模式
+*/
+class UserRepository extends Repository
+{
+	
+	public function model()
+	{
+		return User::class;
+	}
+}
+```
+
 **控制器中依赖注入**
 
+```
+<?php
+namespace App\Http\Controllers;
+use App\Http\Requests;
+use Illuminate\Http\Request;
+use App\Repositories\Eloquent\UserRepository as UserRepo;
+class HomeController extends Controller
+{
+    private $user;
+    private $userRepo;
+    /**
+     * Create a new controller instance.
+     *
+     * @return void
+     */
+    public function __construct(UserRepo $userRepo)
+    {
+        $this->userRepo = $userRepo;
+    }
+    /**
+     * Show the application dashboard.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+        dd($this->userRepo->findBy(2));
+        return view('home');
+    }
+}
+```
 
 # 总结
 
