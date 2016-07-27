@@ -192,6 +192,10 @@ public function index()
 
 Repository 是衔接数据映射层和领域层之间的一个纽带，作用相当于一个在内存中的域对象集合。客户端对象把查询的一些实体进行组合，并把它 们提交给 Repository。对象能够从 Repository 中移除或者添加。Repository 是MVC中衔接Controller和Model之间的一个纽带。从概念上讲，Repository 是把将数据给封装后的集合并提供给Controller的操作。
 
+> 参考文章：[https://bosnadev.com/2015/03/07/using-repository-pattern-in-laravel-5/](https://bosnadev.com/2015/03/07/using-repository-pattern-in-laravel-5/)
+[http://laravelacademy.org/post/3063.html](http://laravelacademy.org/post/3063.html)
+
+
 **定义接口**
 
 ```
