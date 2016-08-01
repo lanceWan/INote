@@ -1,16 +1,13 @@
-# Laravel5.2实战视频之菜单页面搭建
+# Laravel5.2实战视频之添加菜单
 > 晚黎 交流群：312621686  博客地址：[http://www.iwanli.me](http://www.iwanli.me "i晚黎的博客")
 
 ![交流群](https://github.com/lanceWan/INote/blob/master/Laravel5-admin/asssets/Laravel%E5%AD%A6%E4%B9%A0%E4%BA%A4%E6%B5%81%E7%BE%A4%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.png "交流群二维码")
 
-# 样式预览
-将nestable([https://github.com/dbushell/Nestable](https://github.com/dbushell/Nestable))放在vendor文件夹中。将 `plain_menu_page.html` 放在 **production** 文件夹中。
-
-# 添加视图
-1. 新建控制器
-2. 添加路由
-3. 添加菜单视图文件
-4. 视图中加载导入css、js文件
+#添加菜单
+1. 表单构建
+2. Request文件
+3. 添加数据到数据库
+4. 提示
 
 # 项目资料
 1. [后台主题](https://github.com/puikinsh/gentelella)
