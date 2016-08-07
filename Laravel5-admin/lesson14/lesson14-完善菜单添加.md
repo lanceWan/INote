@@ -12,7 +12,7 @@
 #完善添加菜单
 **Presenter模式**
 
-若将逻辑判断都卸载 `View` ，会造成 `View` 肥大而难以维护，我们将使用 `Presenter` 模式辅助 `View` ，将相关的提示灬逻辑判断封装到不同的 `Presenter` ，方便以后维护。
+若将逻辑判断都写在 `View` ，会造成 `View` 肥大而难以维护，我们将使用 `Presenter` 模式辅助 `View` ，将相关的提示逻辑判断封装到不同的 `Presenter` ，方便以后维护。
 
 ```
 @inject('menu','App\Repositories\Presenter\MenuPresenter')
