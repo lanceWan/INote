@@ -1,13 +1,23 @@
-# Laravel5.2实战视频之添加菜单
+# Laravel5.2实战视频之完善添加菜单
 > 晚黎 交流群：312621686  博客地址：[http://www.iwanli.me](http://www.iwanli.me "i晚黎的博客")
 
 ![交流群](https://github.com/lanceWan/INote/blob/master/Laravel5-admin/asssets/Laravel%E5%AD%A6%E4%B9%A0%E4%BA%A4%E6%B5%81%E7%BE%A4%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.png "交流群二维码")
 
-#添加菜单
-1. 表单构建
-2. Request文件
-3. 添加数据到数据库
-4. 提示
+# 改进
+> 根据群友的建议，将视频改进了一下。欢迎大家提供宝贵的建议~
+
+1. 缩短视频时间，避免啰嗦
+2. 以知识点来讲解
+
+#完善添加菜单
+**Presenter模式**
+
+若将逻辑判断都卸载 `View` ，会造成 `View` 肥大而难以维护，我们将使用 `Presenter` 模式辅助 `View` ，将相关的提示灬逻辑判断封装到不同的 `Presenter` ，方便以后维护。
+
+```
+@inject('menu','App\Repositories\Presenter\MenuPresenter')
+```
+
 
 # 项目资料
 1. [后台主题](https://github.com/puikinsh/gentelella)
