@@ -1,10 +1,8 @@
-# Laravel5.2实战视频之菜单列表
+# Laravel5.2实战视频之菜单列表视图
 > 晚黎 交流群：312621686  博客地址：[http://www.iwanli.me](http://www.iwanli.me "i晚黎的博客")
 
 ![交流群](https://github.com/lanceWan/INote/blob/master/Laravel5-admin/asssets/Laravel%E5%AD%A6%E4%B9%A0%E4%BA%A4%E6%B5%81%E7%BE%A4%E7%BE%A4%E4%BA%8C%E7%BB%B4%E7%A0%81.png "交流群二维码")
 
-
-# 菜单列表视图
 
 ## 获取菜单列表方法改进
 
